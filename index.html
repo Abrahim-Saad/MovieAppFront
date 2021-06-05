@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Movie App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d575947870.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+    <nav class="side-navbar">
+        <section class="right-side-navbar">
+	
+            <div class="logo">
+                <img src="imges/logo.png">
+            </div>
+    
+            <div class="toggeler-icon" id="toggle">
+                <i class="fa fa-align-justify" id="dash"></i>
+            </div>
+        
+            <div class="translate-and-share-icons">
+                <div class="globe-icon pb-2">
+                    <span>
+                        <i class="fas fa-globe"></i>
+                    </span>
+                </div>
+                
+                <div class="share-icon pt-1">
+                    <span>
+                        <i class="fas fa-share-alt"></i>
+                    </span>
+                </div>
+            </div>
+        
+        </section>
+
+        <section class="left-side-navbar">
+        
+            <div class="nav-items">
+                <ul class="items">
+                    <!-- Catagories -->
+                    <li class="item" id="nowPlaying"><a class="nav-category" href="#">Now playing</a></li>
+                    <li class="item" id="popular"><a class="nav-category" href="#">Popular</a></li>
+                    <li class="item" id="topRated"><a class="nav-category" href="#">Top Rated</a></li>
+                    <li class="item" id="trending"><a class="nav-category" href="#">Trending</a></li>
+                    <li class="item" id="upcoming"><a class="nav-category" href="#">Upcoming</a></li>
+                    <!---->
+                    <li class="item"><a class="nav-category" href="#contactForm">Contact Us</a></li>
+        
+                </ul>
+            </div>
+
+            <div class="social-medi" style="position: absolute; bottom: 50px; left: 20px;">
+
+                <a href="#" style="padding-left: 15px;"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" style="padding-left: 15px;"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="padding-left: 15px;"><i class="fas fa-globe"></i></a>
+                <div class="copy-rights pt-3">
+                    <span>Copyright Â© 2019 All Rights Reserved.</span>
+                </div>
+                
+            </div>
+            
+        </section>
+
+    </nav>
+   
+
+
+    <section id="searchBars" class="searchBars pt-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" id="searchInAllCatagroies" class="form-control mb-5 " placeholder="get movies by word...">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control " id="searchInCurrentCatagory" placeholder=" search...">
+                </div>
+         
+            </div>
+        </div>
+    </section>
+
+    <!-- Showing Movies from Movie DataBase using Movie API -->
+    <section class="movies">
+        <div class="container text-center">
+            <div class="row" id="moviesList">
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contactForm" class="w-75 mx-auto my-5 contactForm">
+        <div class="container">
+            <h2 class="text-light my-5 contactUs">ContacUs...</h2>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="name" type="text" placeholder="Enter Your Name">
+                        <div class="alert alert-danger" id="nameAlert" role="alert">
+                        Your Name is not valid
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="email" type="email" placeholder="Enter Your Email">
+                        <div class="alert alert-danger" id="emailAlert" role="alert">
+                        Your Email is not valid
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="phone" type="number" placeholder="Enter Your Phone">
+                        <div class="alert alert-danger" id="phoneAlert" role="alert">
+                        Your Phone is not valid
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="age" type="number" placeholder="Enter Your Age">
+                        <div class="alert alert-danger" id="ageAlert" role="alert">
+                        Your Age is not valid
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="password" type="password" placeholder="Enter Your Password">
+                        <div class="alert alert-danger" id="passAlert" role="alert">
+                        Your Password is not valid
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="repassword" type="password" placeholder="Renter Your Password">
+                        <div class="alert alert-danger" id="repassAlert" role="alert">
+                        Doesn't Match With Your First Password
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        
+        
+        </div> 
+        
+        
+            
+        <button type="submit" id="submitBtn" class="btn btn-outline-danger">Submit</button>
+        
+        
+    </section>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
